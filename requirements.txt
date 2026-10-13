@@ -1,0 +1,17 @@
+langgraph>=0.2
+langchain-core>=0.3
+pydantic>=2
+python-dotenv
+
+# Proveedor de LLM: instalá SOLO el que vayas a usar (ver llm.py)
+# langchain-google-genai   # LLM_PROVIDER=gemini (default)
+langchain-groq             # LLM_PROVIDER=groq
+# langchain-openai         # LLM_PROVIDER=openai
+# langchain-anthropic      # LLM_PROVIDER=anthropic
+
+# Búsqueda externa opcional (si no hay TAVILY_API_KEY se usa la base local simulada)
+langchain-community
+tavily-python
+
+# Tests
+pytest
